@@ -1,21 +1,28 @@
 :root{
     --primario: #ffffff;
 }
-html{
+html {
     height: 100%;
+    box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 body{
-    height: 100%;
-    margin: 0;
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 95%;
+    margin: 0;    
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 .morado{
-    background-color: #ffffff; 
-    padding: 20px 50px;
+    background-color: var(--primario); 
+    padding: 40px;
     border-radius: 10px;
 }
 .logo{
@@ -25,3 +32,14 @@ body{
 .text-footer{
     color: white;
 }
+.formulario-registro{
+    margin: 80px;
+}
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+  }
